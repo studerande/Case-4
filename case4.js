@@ -11,9 +11,10 @@ button.addEventListener("click", () => {
   fetch(url)
     .then((Response) => Response.json())
     .then((data) => {
-      console.log("data", data);
+      console.log("data", data.collection.items[0]);
+
+      document.body.innerHTML = data.collection.items[0];
     });
 
-  const li = document.createElement("img");
+  const img = document.createElement("img");
 });
-
