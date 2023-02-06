@@ -12,9 +12,15 @@ button.addEventListener("click", () => {
     .then((Response) => Response.json())
     .then((data) => {
       console.log("data", data.collection.items[0]);
+      let items = data.collection.items;
+      items.forEach((item) => {
+        console.log(item);
+      });
 
-      document.body.innerHTML = data.collection.items[0];
+      document.body.innerHTML = data.collection.items[0].links[0].href;
+
+      let img = new Image();
+      img.src = data.collection.items[0].links[0].href;
+      document.body.appendChild(img);
     });
-
-  const img = document.createElement("img");
 });
