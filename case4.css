@@ -24,10 +24,6 @@ div{
 
 }
 
-#content {
-
-    
-}
 
 body{
     width: 414px;
@@ -43,7 +39,7 @@ body{
     color: white;
     /* background-size: cover; */
     /* overflow: scroll; */
-   margin-left: 150px; 
+   /* margin-left: 150px;  */
    
    
    }
