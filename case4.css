@@ -2,3 +2,68 @@
     width: 414px;
     height: 896px;
 } */
+
+#search{
+    width: 344px;
+    height: 35px;
+    top: 39px;
+    left: 35px;
+    margin-top: 54px;
+    font-size: x-large;
+    margin-left: 20%;
+    
+
+
+   
+}
+div{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+#content {
+
+    
+}
+
+body{
+    width: 414px;
+    height: 896px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    /* background-color: #18005C; */
+    background-image: url("img/10777673.jpg");
+   width: 414px;
+   height: 896;
+   /* background-repeat: no-repeat; */
+    color: white;
+    /* background-size: cover; */
+    /* overflow: scroll; */
+   margin-left: 150px; 
+   
+   
+   }
+   img {
+    margin-top: 50px;
+    max-width: 100%;
+   }
+
+   h1{
+    color: white;
+   }
+
+   button{
+    width: 80px;
+    height: 40px;
+    top: 39px;
+    margin-top: 53px;
+    margin-left: 10px;
+    border-radius: 5px;
+
+   }
+
+   

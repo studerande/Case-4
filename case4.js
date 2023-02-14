@@ -14,6 +14,15 @@ const search = document.querySelector("#search");
     .then((data) => {
      let items = data.collection.items;
     
+     document.body.textContent = "ignet "
+
+
+
+     document.getElementById("demo").innerHTML = items.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= ;
+}
         items.forEach((item) => {
       
         console.log(item);
@@ -27,8 +36,21 @@ const search = document.querySelector("#search");
         img.src = item.links[0].href;
         des.textContent = item.data[0].description
 
-        document.body.appendChild(img);
-        document.body.appendChild(des)
+        
+
+        // document.body.appendChild(img);
+        // document.body.appendChild(des)
+
+        
+
+        // document.getElementById("content").appendChild(des)
+
+        console.log(document)
+        
+
+        // content.appendChild(img);
+        // content.appendChild(des)
+
       }
       });
      
