@@ -3,7 +3,7 @@ const button = document.querySelector("button");
 const search = document.querySelector("#search");
 
 button.addEventListener("click", () => {
-  url = `https://images-api.nasa.gov/search?q=${search.value}`;
+url = `https://images-api.nasa.gov/search?q=${search.value}`;
 
   document.getElementById("content").innerHTML = "Laddar";
 
@@ -34,6 +34,7 @@ button.addEventListener("click", () => {
           ) === "ja"
         ) {
           console.log(data.collection.items);
+  
         } else {
           console.log(filteredArray);
         }
