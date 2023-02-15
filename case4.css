@@ -10,6 +10,8 @@
     left: 35px;
     margin-top: 54px;
     font-size: x-large;
+    border-radius: 5px;
+
 }
 
 
@@ -53,6 +55,7 @@ body{
     margin-top: 53px;
     margin-left: 10px;
     border-radius: 5px;
+    
 
    }
 
