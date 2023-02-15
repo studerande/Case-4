@@ -51,7 +51,6 @@ button.addEventListener("click", () => {
           img.src = item.links[0].href;
           des.textContent = item.data[0].description;
 
-
           document.getElementById("content").appendChild(img);
           document.getElementById("content").appendChild(des);
         }
