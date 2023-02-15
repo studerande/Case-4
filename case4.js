@@ -1,7 +1,5 @@
 let url = "https://images-api.nasa.gov/search?q=";
-
 const button = document.querySelector("button");
-
 const search = document.querySelector("#search");
 
 button.addEventListener("click", () => {
@@ -17,7 +15,7 @@ button.addEventListener("click", () => {
 
       async function getData() {
         let response = await fetch("https://images-api.nasa.gov/search?q=nasa");
-        // awit betyder typ ta det lungt så länge datan är påväg
+        // awit betyder typ ta det lungt så länge, datan är påväg
         let data = await response.json();
         // let data = awit response.json() skapar en variabel som omvandlar, spåket från json till javascript
 
@@ -29,8 +27,6 @@ button.addEventListener("click", () => {
             new Date("2010-05-14T00:00:00Z")
           // raden ovanför bestämer när den ska starta tex 2010 då tar den bara efter det datumet,
         );
-
-        // console.log("filteredArray", filteredArray);
 
         if (
           prompt(
@@ -55,9 +51,9 @@ button.addEventListener("click", () => {
           img.src = item.links[0].href;
           des.textContent = item.data[0].description;
 
-          document.body.appendChild(img);
-          document.body.appendChild(des);
 
+          document.getElementById("content").appendChild(img);
+          document.getElementById("content").appendChild(des);
         }
       });
     });
