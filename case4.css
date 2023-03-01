@@ -8,6 +8,8 @@
     box-sizing: border-box;
 
  }
+ /* detta övanför är grundspesen så att css är bra i grunden */
+ 
 #search{
     width: 100%;
     padding: 18px 24px;
@@ -18,22 +20,14 @@
 }
 
 
-div{
-    /* align-items: center;
-    text-align: center;
-    
-    justify-content: center; */
-
-}
-
-
 div.content{
         width: 100%;
         max-width: 520px ;
         margin: 0 auto;
         overflow: hidden;   
-        
+        /* overflow gör att den inte glappar i sidled */
 }
+/* Detta ovanför gör att det blir fint i mobil skärm samt större skärm och allt är i center utan glapp i sidled*/
 
 p{
     text-overflow: ellipsis;
@@ -42,7 +36,7 @@ p{
     line-height: 1.4;
     
 }
-
+ 
 body{
     align-items: center;
     text-align: center;
@@ -64,22 +58,40 @@ body{
     width: 100%;
     
    }
-
-
    h1{
     color: white;
    }
-
    button{
-    top: 39px;
     margin-top: 20px;
-    border-radius: 5px;
+    top: 39px;
     padding: 16px 32px;
-    background-color: darkblue;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 1px;
     border: none;
     color: white;
-    font-weight: bold;
-    letter-spacing: 1px;
+    background-color: darkblue;
    }
 
+   #year{
+    margin-top: 20px;
+    top: 39px;
+    padding: 16px 32px;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    border: none;
+    color: blue;
+    background-color: cornflowerblue;
+    align-items: center;
+    text-align: center;
+   
     
+
+   }
+   h3{
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+   }
